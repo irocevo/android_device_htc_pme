@@ -15,7 +15,7 @@
 # Inherit from our custom product configuration
 $(call inherit-product, vendor/aosip/common.mk)
 $(call inherit-product, device/htc/pme/full_pme.mk)
-$(call inherit-product, vendor/cm/config/common_full_phone.mk)
+$(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
 ## Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := pme
